@@ -9,8 +9,8 @@ using namespace std;
 
 int getTestScores();
 void initializeAndSort(double* testArrayIn, const int TEST_ARRAY_SIZE_IN);
-void displayArray(double* testArrayIn, const int TEST_ARRAY_SIZE_IN);
-double displayAverage(double* testArrayIn, const int TEST_ARRAY_SIZE_IN);
+void displayArray(const double* TEST_ARRAY_IN, const int TEST_ARRAY_SIZE_IN);
+double displayAverage(const double* TEST_ARRAY_IN, const int TEST_ARRAY_SIZE_IN);
 
 bool wantToExit();
 
