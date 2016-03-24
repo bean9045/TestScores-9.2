@@ -66,20 +66,20 @@ void initializeAndSort(double* testArrayIn, const int TEST_ARRAY_SIZE_IN)
 		}
 	} while (sorting);
 }
-void displayArray(double* testArrayIn, const int TEST_ARRAY_SIZE_IN)
+void displayArray(const double* TEST_ARRAY_IN, const int TEST_ARRAY_SIZE_IN)
 {
 	for (int k = 0; k < TEST_ARRAY_SIZE_IN; k++)
 	{
-		cout << "Test score " << k + 1 << ": " << *(testArrayIn + k) << endl;
+		cout << "Test score " << k + 1 << ": " << *(TEST_ARRAY_IN + k) << endl;
 	}
 }
-double displayAverage(double* testArrayIn, const int TEST_ARRAY_SIZE_IN)
+double displayAverage(const double* TEST_ARRAY_IN, const int TEST_ARRAY_SIZE_IN)
 {
 	double sum = 0;
 
 	for (int k = 0; k < TEST_ARRAY_SIZE_IN; k++)
 	{
-		sum += *(testArrayIn + k);
+		sum += *(TEST_ARRAY_IN + k);
 	}
 
 	double average = static_cast<double>(sum) / TEST_ARRAY_SIZE_IN;
