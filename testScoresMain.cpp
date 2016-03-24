@@ -4,14 +4,14 @@ int main()
 {
 	do
 	{
-		const int TEST_ARRAY_SIZE = getTestScores();
-		double* testArray = new double[TEST_ARRAY_SIZE];
+		int testArraySize = getTestScores();
+		double* testArray = new double[testArraySize];
 
-		initializeAndSort(testArray, TEST_ARRAY_SIZE);
+		initializeAndSort(testArray, testArraySize);
 		cout << endl;
-		displayArray(testArray, TEST_ARRAY_SIZE);
+		displayArray(testArray, testArraySize);
 
-		cout << endl << "The average test score is: " << displayAverage(testArray, TEST_ARRAY_SIZE) << endl << endl;
+		cout << endl << "The average test score is: " << displayAverage(testArray, testArraySize) << endl << endl;
 
 		delete [] testArray;
 
